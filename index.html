@@ -1,54 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FP SELECT</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
     <header>
-        <img src="imgs/img-3.png" alt="logo FP">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Carros</a></li>
-                <li><a href="#">Fale Conosco</a></li>
-            </ul>
-        </nav>
+      <img src="imgs/img-3.png" alt="logo FP" />
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Carros</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+        </ul>
+      </nav>
     </header>
+
     <section>
-        <div class="list">
-            <div class="item">
-                <div class="car-img">
-                    <img src="imgs/img-1.png" alt="imagem carro">
-                </div>
-                <div class="content">
-                    <p class="car-info">Único Dono</p>
-                    <h2>Porsche</h2>
-                    <p class="description">
-                        A Porsche branca desliza pela estrada como um raio de elegância e sofisticação. Seu design impecável reflete a engenharia italiana de ponta, enquanto o acabamento branco puro ressalta cada curva e detalhe aerodinâmico. Mais que um carro, é a combinação perfeita de luxo, potência e estilo inconfundível.
-                    </p>
-                    <button class="information">Saiba mais...</button>
-                </div>
-            </div>
+      <div class="list">
+        <!-- Primeiro item precisa das classes .item e .active -->
+        <div class="item active">
+          <div class="car-img">
+            <img src="imgs/img-1.png" alt="Porsche branca" />
+          </div>
+          <div class="content">
+            <p class="car-info">Único Dono</p>
+            <h2>Porsche</h2>
+            <p class="description">
+              A Porsche branca desliza pela estrada como um raio de elegância e
+              sofisticação. Seu design impecável reflete a engenharia de ponta,
+              enquanto o acabamento branco puro ressalta cada curva e detalhe
+              aerodinâmico. Mais que um carro, é a combinação perfeita de luxo,
+              potência e estilo inconfundível.
+            </p>
+            <button class="information">Saiba mais...</button>
+          </div>
         </div>
-        <div class="arrows">
-            <button>
-                <img src="imgs/img-2.png" alt="button-skip">
-            </button>
-            <button>
-                <img src="imgs/img-2.png" alt="button-skip">
-            </button>
+
+        <div class="item">
+          <div class="car-img">
+            <img src="imgs/img-5.png" alt="Lamborghini" />
+          </div>
+          <div class="content">
+            <p class="car-info">Único Dono</p>
+            <h2>Lamborghini</h2>
+            <p class="description">
+              A Lamborghini é sinônimo de luxo, velocidade e design arrojado.
+              Com suas linhas aerodinâmicas e motores potentes, esses
+              supercarros são um sonho para muitos entusiastas. Desde o rugido
+              do motor até a adrenalina de dirigir, a Lamborghini é uma
+              experiência única que combina tecnologia de ponta e paixão pela
+              velocidade.
+            </p>
+            <button class="information">Saiba mais...</button>
+          </div>
         </div>
-        <div class="indicator">
-            <div class="number">01</div>
-            <ul>
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-            </ul>
+
+        <div class="item">
+          <div class="car-img">
+            <img src="imgs/img-4.png" alt="Ferrari vermelha" />
+          </div>
+          <div class="content">
+            <p class="car-info">Conversível</p>
+            <h2>Ferrari</h2>
+            <p class="description">
+              A Ferrari vermelha é um ícone do automobilismo, representando
+              paixão, velocidade e excelência. Com seu design elegante e motor
+              potente, esses carros são uma obra-prima da engenharia italiana.
+              Dirigir uma Ferrari vermelha é uma experiência emocionante que
+              combina adrenalina, luxo e a emoção de estar ao volante de um dos
+              carros mais desejados do mundo.
+            </p>
+            <button class="information">Saiba mais...</button>
+          </div>
         </div>
+      </div>
+
+      <!-- Setas -->
+      <div class="arrows">
+        <button class="reverse">
+          <img src="imgs/img-2.png" alt="Botão anterior" />
+        </button>
+        <button class="next">
+          <img src="imgs/img-2.png" alt="Botão próximo" />
+        </button>
+      </div>
+
+      <!-- Indicadores -->
+      <div class="indicator">
+        <div class="number">01</div>
+        <ul>
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
     </section>
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>
