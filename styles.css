@@ -8,7 +8,7 @@ body {
     background-color: #000; 
     color: white; 
     font-size: 16px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 header {
     position: fixed;
@@ -81,7 +81,7 @@ section {
 }
 .arrows button img {
     width: 100px;
-    margin-top: 4;
+    margin-top: 4px;
 }
 .content {
     position: absolute;
@@ -116,6 +116,7 @@ section {
     color: #000;
     cursor: pointer;
     font-weight: bold;
+    background-color: #bef11b;
 }
 .indicators {
     position: absolute;
@@ -143,6 +144,6 @@ section {
     border-radius: 5px;
     transition: 0.5s;
 }
-.active {
+.number ul li.active {
     background-color: white;
 }
